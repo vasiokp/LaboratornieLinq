@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{03E86463-015D-46DF-A3B3-47892F9ADC67}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>LinqVBNet.Module1</StartupObject>
+    <StartupObject>LinqVBNet.BaseModule</StartupObject>
     <RootNamespace>LinqVBNet</RootNamespace>
     <AssemblyName>LinqVBNet</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -68,7 +68,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.vb" />
+    <Compile Include="BaseModule.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -104,6 +104,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Variants.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
